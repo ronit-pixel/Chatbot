@@ -1,0 +1,113 @@
+.main{
+    flex:1;
+    min-height: 100vh;
+    padding-bottom: 10vh;
+    position: relative;
+    /* background-color: red; */
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 15px;
+    border-bottom: 2px solid black;
+    font-weight:600;
+}
+.main-hero{
+    max-width: 800px;
+    margin: auto;
+}
+.greeet{
+    margin: 40px 0px;
+    font-size: 50px;
+    font-weight:600;
+    padding: 15px;
+}
+.greeet span{
+   background:-webkit-linear-gradient(16deg,blue,red) ; 
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+    gap: 12px;
+    padding: 15px;
+}
+.card{
+    height: 200px;
+    padding: 12px;
+    background-color: #F0F4F9;
+    border-radius: 10px;
+   position: relative;
+   cursor: pointer;
+}
+.card svg{
+    padding: 5px;
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+    bottom: 10px;
+    right:10px
+}
+.card img{
+    padding: 5px;
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+    bottom: 10px;
+    right:10px
+}
+.card:hover{
+    background-color:#DFE4EA;
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 800px;
+    padding:0px 15px ;
+}
+.search{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    background-color: #DFE4EA;
+    padding: 8px 15px;
+    border-radius:50px ;
+    margin-bottom: 3vw;
+}
+.search svg{
+    cursor: pointer;
+}
+.search input{
+ border:none;
+ background-color: transparent;
+ outline: none;
+ width: 90%;
+ padding: 10px;
+ font-size: 15px;
+}
+.result{
+    padding: 0px 5%;
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+.result::-webkit-scrollbar{
+    display: none;
+}
+.title{
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.result img{
+    border-radius: 50%;
+}
+.navbar img{
+    border-radius:50%;
+    height: 2vw;
+}
